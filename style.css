@@ -1,0 +1,154 @@
+:root {
+    --cyan-600: hsl(192, 37%, 48%);
+    --cyan-300: hsl(192, 90%, 77%);
+    --purple-600: hsl(268, 34%, 53%);
+    --purple-300: hsl(268, 100%, 86%);
+
+    --white: hsl(0, 0%, 98%);
+    --slate-300: hsl(240, 18%, 85%);
+    --slate-600: hsl(240, 10%, 57%);
+    --slate-900: hsl(240, 21%, 20%);
+
+    --radius-button: 1.8rem;
+    --padding-button: 1rem 2.5rem;
+
+    --padding-section: 2rem 2rem 4rem 2rem;
+
+    --font: 'Red Hat Display', sans-serif;
+    --font-size-body: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--font-size-body);
+    color: var(--slate-600);
+    background-color: var(--white);
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 19rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.nav {
+    margin-block-start: 3rem;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-section);
+    gap: 3rem;
+
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+h1 {
+    color: var(--slate-900);
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+button {
+    border: none;
+    border-radius: var(--radius-button);
+    padding: var(--padding-button);
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.cta-cyan {
+    background-color: var(--cyan-600);
+}
+
+.cta-purple {
+    background-color: var(--purple-600);
+}
+
+.version-cyan {
+    color: var(--cyan-300);
+}
+
+.version-purple {
+    color: var(--purple-300);
+}
+
+.step-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.line {
+    height: 5rem;
+    width: 1px;
+    border: 1px solid var(--slate-300);
+
+}
+
+.number {
+    border-radius: 50%;
+    border: 1px solid var(--slate-300);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-section);
+    gap: 4rem;
+}
+
+.main-content-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.75rem;
+}
