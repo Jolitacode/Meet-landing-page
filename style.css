@@ -112,8 +112,6 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
-    z-index: 999;
 
 }
 
@@ -127,6 +125,7 @@ button {
 .number {
     border-radius: 50%;
     border: 1px solid var(--slate-300);
+    background-color: var(--white);
     width: 3.5rem;
     height: 3.5rem;
     display: flex;
@@ -178,17 +177,20 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
     padding: 4rem 2rem;
+}
+
+.footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 5rem;
+    position: relative;
+    top: 50%;
 }
 
 .number-02 {
     position: absolute;
-    top: -2rem;
+    bottom: rem;
 }
