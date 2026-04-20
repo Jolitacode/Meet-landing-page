@@ -33,8 +33,6 @@ body {
     background-color: var(--white);
     line-height: 1.5;
     min-height: 100vh;
-    min-width: 19rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,10 +171,8 @@ h2 {
 
 footer {
     background-color: var(--cyan-600);
-    background-image: url(mobile/image-footer.jpg);
+    background-image: (linear-gradient(rgba(52, 152, 219, 0.6), rgba(52, 152, 219, 0.6), url(mobile/image-footer.jpg)));
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     padding: 4rem 2rem;
 }
 
@@ -194,4 +190,5 @@ footer {
 
 .number-02 {
     position: absolute;
+    top: -2rem;
 }
